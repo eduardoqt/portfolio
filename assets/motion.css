@@ -1,0 +1,15 @@
+/* Movimentos discretos; conteúdo visível sem JavaScript. */
+#body-plexsans .scroll-reveal{transition:opacity 650ms ease,transform 650ms cubic-bezier(.2,.65,.3,1)}
+#body-plexsans .scroll-reveal.is-pending{opacity:0;transform:translateY(20px)}
+#body-plexsans .project-list .visual{overflow:hidden}
+#body-plexsans .project-list .visual img{transition:transform 350ms ease}
+#body-plexsans .motion-arrow{display:inline-block;transition:transform 200ms ease}
+@media(hover:hover) and (pointer:fine){
+ #body-plexsans .project-list .visual:hover img{transform:scale(1.02)}
+ #body-plexsans a:hover .motion-arrow{transform:translate(3px,-2px)}
+}
+#body-plexsans a:focus-visible .motion-arrow{transform:translate(3px,-2px)}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto!important}
+ #body-plexsans .scroll-reveal,#body-plexsans .project-list .visual img,#body-plexsans .motion-arrow{transition:none!important;transform:none!important;opacity:1!important}
+}
